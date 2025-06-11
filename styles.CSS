@@ -119,6 +119,22 @@
   padding: 0 8px;
 }
 
+@media only screen and (max-width: 600px) {
+  .w3-image {
+    width: 90% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .BodyText {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+     text-align: justify;
+  }
+}
+
 /* Body Text Style */
 .BodyText {
   font-family: 'Bodytext';
