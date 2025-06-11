@@ -131,11 +131,24 @@
     width: 90%;
     margin: 0 auto;
     box-sizing: border-box;
-    text-align: justify;
-    padding-top: 20px;
-
+     text-align: justify;
+     padding-top: 175px;
   }
 }
+/* Mobile Anchor */
+
+.mobile-anchor {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-anchor {
+    display: block;
+    height: 1px; /* Keeps it visible for scroll targeting */
+  }
+}
+
+
 
 /* Body Text Style */
 .BodyText {
