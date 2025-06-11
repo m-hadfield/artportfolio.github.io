@@ -1,0 +1,157 @@
+/* === Custom Fonts === */
+@font-face {
+  font-family: 'CustomItalic';
+  src: url('Equity Text B Italic 111011.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CustomRegular';
+  src: url('Equity Caps B Bold 111011.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bodytext';
+  src: url('NewsGothicMTStd.otf') format('opentype');
+}
+
+
+.custom-bold {
+  font-family: 'CustomItalic'; /* or 'CustomRegular', whichever you want */
+}
+
+/* === Top Bar (Navbar) === */
+.w3-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Default nav item styles */
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  font-size: 32px;
+  font-family: 'CustomItalic';
+  text-decoration: none;
+  color: #fe4b4be3; /* reddish */
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+/* Nav hover effect (excluding brand) */
+.w3-bar .w3-bar-item:not(.brand-name):hover {
+  color: #000000;
+}
+
+/* Megan Hadfield default */
+.w3-bar .brand-name {
+  color: #000000;
+  font-family: 'CustomItalic';
+}
+
+/* Megan Hadfield hover */
+.w3-bar .brand-name:hover {
+  color: #000000e3;
+  opacity: 0.25;
+  text-shadow: 0 0 8px #000000e3;
+}
+
+/* Remove orphan text-shadow rule */
+ /* text-shadow: 0 0 8px #fe4b4be3; */ /* <-- remove this */
+
+/* === Text Align + Float Utilities === */
+.w3-right-align { text-align: right !important; }
+.w3-justify { text-align: justify !important; }
+.w3-center { text-align: center !important; }
+.w3-rightbar { border-right: 6px solid #ccc !important; }
+.w3-right { float: right !important; }
+
+/* === Layout === */
+.w3-content,
+.w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w3-content { max-width: 980px; }
+.w3-auto { max-width: 1140px; }
+
+/* Row Padding */
+.w3-row-padding,
+.w3-row-padding > .w3-half,
+.w3-row-padding > .w3-third,
+.w3-row-padding > .w3-twothird,
+.w3-row-padding > .w3-threequarter,
+.w3-row-padding > .w3-quarter,
+.w3-row-padding > .w3-col {
+  padding: 0 8px;
+}
+
+/* Containers & Panels */
+.w3-container,
+.w3-panel {
+  padding: 0.01em 16px;
+}
+
+.w3-panel {
+  margin: 16px 0;
+}
+
+/* Clearfix */
+.w3-cell-row::before,
+.w3-cell-row::after,
+.w3-clear::before,
+.w3-clear::after,
+.w3-bar::before,
+.w3-bar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Column Padding */
+.w3-row-padding > .w3-col {
+  padding: 0 8px;
+}
+
+/* Body Text Style */
+.BodyText {
+  font-family: 'Bodytext';
+  width: 65%;
+}
+
+/* Section Padding */
+.w3-padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+/* === Footer === */
+.footer {
+  font-size: 16px;
+  font-family: 'CustomItalic';
+  
+  color: #fe4b4be3;
+  text-decoration: none;
+  
+}
+
+/* Footer Hover */
+.footer:hover {
+  color: #000000e3;
+  opacity: 0.25;
+  text-shadow: 0 0 8px #fe4b4be3;
+   text-decoration: none;
+  
+}
+
+/* Global Smooth Scroll (recommended over targeting .footer) */
+html {
+  scroll-behavior: smooth;
+  
+}
